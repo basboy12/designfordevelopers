@@ -1,0 +1,221 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; }
+
+h1,
+h2,
+h3,
+h4,
+p,
+blockquote,
+figure,
+ol,
+ul {
+  margin: 0;
+  padding: 0; }
+
+main,
+li {
+  display: block; }
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: inherit; }
+
+strong {
+  font-weight: bold; }
+
+a,
+button {
+  color: inherit;
+  transition: .15s; }
+
+a {
+  text-decoration: none; }
+
+button {
+  overflow: visible;
+  border: 0;
+  font: inherit;
+  -webkit-font-smoothing: inherit;
+  letter-spacing: inherit;
+  background: none;
+  cursor: pointer; }
+
+::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+:focus {
+  outline: 0; }
+
+section, .wrapper, .row {
+  *zoom: 1; }
+  section:before, .wrapper:before, .row:before, section:after, .wrapper:after, .row:after {
+    content: " ";
+    display: table; }
+  section:after, .wrapper:after, .row:after {
+    clear: both; }
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1360px; }
+
+.flex_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; }
+
+.col_4 {
+  width: 100%; }
+
+.col_3 {
+  width: 75%; }
+
+.col_2 {
+  width: 50%; }
+
+.col_1 {
+  width: 25%; }
+
+[class*='col'] {
+  float: left;
+  min-height: 1px;
+  padding: 0 10px; }
+
+:root {
+  font-size: 16px;
+  font-family: "Raleway"; }
+
+body {
+  background-color: #f3f3f3; }
+
+#sort_menu {
+  color: #505050;
+  font-weight: 500;
+  margin-bottom: 8px; }
+  #sort_menu p {
+    float: left;
+    padding-right: 4px; }
+  #sort_menu ul li {
+    padding: 0 7px;
+    display: inline-block; }
+    #sort_menu ul li.active {
+      color: #38cfbb; }
+
+nav {
+  height: 60px;
+  background-color: #fafcff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.09); }
+
+section#banner {
+  margin: 100px 0; }
+  section#banner #banner_image {
+    box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.07);
+    background-image: url("../images/banner.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 460px;
+    width: calc( 100% - 20pxt);
+    margin: 0 10px;
+    border-radius: 2.5px;
+    text-align: center; }
+    section#banner #banner_image h1 {
+      font-size: 42px;
+      color: white;
+      font-weight: 400;
+      line-height: 1.5em; }
+    section#banner #banner_image h2 {
+      font-size: 22px;
+      color: rgba(255, 255, 255, 0.86);
+      font-weight: 300; }
+    section#banner #banner_image .btn {
+      display: block;
+      margin: 70px auto 0;
+      line-height: 2.5em;
+      font-weight: 600;
+      font-size: 16px;
+      text-transform: uppercase;
+      background-color: rgba(0, 0, 0, 0.2);
+      color: #38cfbb;
+      width: 150px;
+      height: 40px;
+      border-radius: 20px;
+      border: 1px solid #38cfbb;
+      transition: 0.3s; }
+      section#banner #banner_image .btn:hover {
+        color: black;
+        box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.2);
+        background-color: #38cfbb; }
+
+#content #main .project {
+  background: white;
+  padding: 20px;
+  border-radius: 2.5px;
+  height: 180px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.07); }
+  #content #main .project img {
+    height: 140px;
+    width: 140px;
+    background-color: #eee;
+    border-radius: 2.5px;
+    outline: none;
+    float: left; }
+  #content #main .project .text_wrapper {
+    padding: 30px;
+    text-align: left;
+    width: 100%; }
+    #content #main .project .text_wrapper h3 {
+      font-size: 22px;
+      color: #434343;
+      font-weight: 500;
+      padding-bottom: 5px; }
+    #content #main .project .text_wrapper p {
+      font-size: 16px;
+      color: #656565;
+      line-height: 1.5em;
+      font-weight: 300; }
+
+#sidebar .sidebar, #sidebar .submit_button {
+  border-radius: 2.5px;
+  box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.07);
+  background-color: white;
+  margin-bottom: 20px; }
+#sidebar .submit_button {
+  text-align: center;
+  display: block;
+  transition: 0.15s ease-out; }
+  #sidebar .submit_button:hover {
+    background-color: #38cfbb; }
+  #sidebar .submit_button h5 {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px 0;
+    margin: 0; }
+#sidebar .sidebar h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  padding: 15px 30px;
+  border-bottom: 1px solid #eee; }
+#sidebar .sidebar ul {
+  padding: 10px 30px; }
+  #sidebar .sidebar ul li {
+    font-size: 14px;
+    color: #757575;
+    font-weight: 400;
+    padding: 15px 0; }

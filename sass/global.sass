@@ -1,0 +1,140 @@
+@import 'reset.scss'
+@import 'grid'
+
+$green: #38cfbb
+$box: rgba(255, 255, 255, 0.07)
+
+\:root
+  font-size: 16px
+  font-family: 'Raleway'
+
+body
+  background-color: #f3f3f3
+
+#sort_menu
+  color: #505050
+  font-weight: 500
+  margin-bottom: 8px
+  p
+    float: left
+    padding-right: 4px
+  ul
+
+    li
+      padding: 0 7px
+      display: inline-block
+      &.active
+        color: $green
+nav
+  height: 60px
+  background-color: #fafcff
+  border-bottom: 1px solid rgba(black, 0.09)
+
+section#banner
+  margin: 100px 0
+  #banner_image
+    box-shadow: 0 0 5px 0 $box
+    background:
+      image: url('../images/banner.png')
+      repeat: no-repeat
+      position: center center
+      size: cover
+    height: 460px
+    width: calc( 100% - 20pxt)
+    margin: 0 10px
+    border-radius: 2.5px
+    text-align: center
+    h1
+      font-size: 42px
+      color: white
+      font-weight: 400
+      line-height: 1.5em
+    h2
+      font-size: 22px
+      color: rgba(white, 0.86)
+      font-weight: 300
+    .btn
+      display: block
+      margin: 70px auto 0
+      line-height: 2.5em
+      font-weight: 600
+      font-size: 16px
+      text-transform: uppercase
+      background-color: rgba(black, 0.2)
+      color: $green
+      width: 150px
+      height: 40px
+      border-radius: 20px
+      border: 1px solid $green
+      transition: 0.3s
+      &:hover
+        color: black
+        box-shadow: 0 0px 5px 0 rgba(black, 0.2)
+        background-color: $green
+
+#content
+  #main
+    .project
+      background: white
+      padding: 20px
+      border-radius: 2.5px
+      height: 180px
+      margin-bottom: 20px
+      box-shadow: 0 0 5px 0 $box
+      img
+        height: 140px
+        width: 140px
+        background-color: #eee
+        border-radius: 2.5px
+        outline: none
+        float: left
+      .text_wrapper
+        padding: 30px
+        text-align: left
+        width: 100%
+        h3
+          font-size: 22px
+          color: #434343
+          font-weight: 500
+          padding-bottom: 5px
+        p
+          font-size: 16px
+          color: #656565
+          line-height: 1.5em
+          font-weight: 300
+
+
+
+
+
+#sidebar
+  .sidebar, .submit_button
+    border-radius: 2.5px
+    box-shadow: 0 0 5px 0 $box
+    background-color: white
+    margin-bottom: 20px
+  .submit_button
+    text-align: center
+    display: block
+    transition: .15s ease-out
+    &:hover
+      background-color: $green
+    h5
+      font-size: 16px
+      font-weight: 500
+      padding: 15px 0
+      margin: 0
+  .sidebar
+    h4
+      font-size: 18px
+      font-weight: 500
+      color: #333
+      padding: 15px 30px
+      border-bottom: 1px solid #eee
+    ul
+      padding: 10px 30px
+      li
+        font-size: 14px
+        color: #757575
+        font-weight: 400
+        padding: 15px 0
